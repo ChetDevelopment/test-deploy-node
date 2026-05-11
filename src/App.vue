@@ -11,7 +11,7 @@ interface User {
 const users = ref<User[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
-const apiUrl = '/api/users'
+const apiUrl = 'https://mongo-api-beta.vercel.app/api/users'
 const showForm = ref(false)
 const editingUser = ref<User | null>(null)
 const formData = ref({ name: '', email: '' })
